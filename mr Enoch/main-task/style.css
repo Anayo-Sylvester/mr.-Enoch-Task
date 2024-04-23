@@ -1,0 +1,132 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+}
+#logo{
+    height: 200px;
+}
+#searchbar{
+    position: relative;
+    background: red;
+    width: fit-content;
+}
+#searchbar input{
+    padding: 10px 20px;
+}
+#searchbar i{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 24px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -30px;
+    padding: 20px;
+    border: 2px solid;
+}
+nav ul li{
+list-style: none;
+position: relative;
+}
+nav ul li::after{
+    content: "";
+    position: absolute;
+    height: 58px;
+    width: 2px;
+    background: #000;
+    right: -55px;
+    top: -20px;
+}
+nav ul li:last-of-type::after{
+    display: none;
+}
+#first{
+    padding: 20px;
+    border: 2px solid;
+    display: flex;
+}
+#first img{
+    width: 60%;
+}
+#first .sub-first{
+    margin-left: 10px;
+    width: 40%;
+}
+#first div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#first button{
+    padding: 10px 20px;
+}
+#second{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    gap: 10px;
+    width: 830px;
+    margin: 20px auto;
+}
+#second div{
+    text-align: center;
+    border: 1px solid;
+}
+#second img{
+    width: 100%;
+}
+#second button{
+    padding: 10px 40px;
+    background-color: transparent;
+    border: 2px solid;
+}
+#third{
+    display: flex;
+}
+#third #left{
+    width: 50%;
+}
+#third #left .cont{
+    display: flex;
+    align-items: center;
+}
+#third #left img{
+    width: 20%;
+}
+#third #left .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    width: 70%;
+}
+#third #left button{
+    padding: 5px 10px;
+    width: 100px;
+    text-align: center;
+}
+#third #middle{
+    width: 25%;
+}
+#third #middle img{
+    width: 100%
+}
+#third #middle button{
+    padding: 10px 20px;
+}
+footer{
+    margin: 10px 0;
+    border: 1px solid;
+    text-align: center;
+}
